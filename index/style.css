@@ -1,0 +1,769 @@
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+footer {
+    background-color: white;
+    height: 30px;
+}
+
+#lienMentionsLégales {
+    position: relative;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 50vw;
+    font-size: 1.1em;
+}
+/*page d'acceuil*/
+
+/* header */
+.traitHeader {
+    position: absolute;
+    top: 100px;
+    z-index: 3;
+    background-color:gainsboro;
+    width:100%;
+    height:1px;
+}
+
+#imageBurger {
+    display: none;
+}
+.boutonsHeader {
+    margin-top: 60px; /* décalle par rapport au haut */
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-weight: normal;
+    margin-left: 100px;
+    margin-right: 100px;
+    top: 100px;
+    border-top:2px, solid, gray;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 10px
+}
+
+.containerMenuHamburger {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    box-shadow: 0px 3px 5px gray;
+    background-color:white;
+    justify-content: center;
+    height:40vh;
+    display: none;
+}
+
+.containerMenuHamburger a {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+.navbarLinks {
+    
+    margin: 30px; /* décalle par rapport au haut */
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-weight: normal;
+    border-top:2px, solid, gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 10px
+}
+
+
+.boutonsHeader a{  
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+
+h1 {
+    float: center;
+    text-align: center;
+    width: auto;
+    margin: 0.3em;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-weight: 10;
+}
+
+header {
+    box-shadow: 0px 3px 5px gray;
+    height: 150px;
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px;
+    border: solid, grey;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#laVaccination {
+    font-size: 1.3em;
+    left: 300px
+}
+
+#laVaccination span {
+    font-size: 15px;
+}
+
+#campagneVaccination1 {
+    display: none;
+}
+
+#vaccination1  {
+   display: none;
+}
+
+#laVaccination:hover a {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 1em;
+   background-color: white;
+   border: solid 1px lightgrey;
+   padding: 5 3 5 3;
+   display: block;
+}
+
+.imageHeader {
+    position: absolute;
+    height: 100px;
+}
+
+
+/* corp du site */
+
+.Body{
+    font-family: 'Agency FB', arial;
+    position: relative;
+    background-image: url("libertéfond.jpg");
+    background-size: cover;
+    background-position : center;
+    height: 100vh; /* viewport heigth */
+    background-size: cover /*l'image s'adapte à la taille elle est donc pas zoomé */;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+.slogan {
+   position: absolute;
+   top: 200px;
+   left: 100px;
+   display: inline;
+   font-size: 80px;
+   color: #2317CB;
+}
+
+h2{
+    display: inline;
+}
+
+/* les onglets de l'acceuil */
+
+.onglets {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 70vh;
+ }
+
+.texteInterieurOnglet {
+    justify-content: center;
+    left: 70px;
+    top: 0px;
+    text-decoration: none;
+    padding-top: 15px;
+    text-align: center;
+    color:black;
+    font-size: 1.2em
+}
+
+
+.grosTitre {
+    text-decoration: none;
+    vertical-align: middle; 
+    color: white;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+/* début onglet vaccin */
+#headerOngletVaccins {
+   margin-left: 50px;
+   margin-right: 50px;
+   border-radius: 10px 10px 0 0;
+   text-align: center;
+   width: 400px;
+   height: 35px;
+   background: linear-gradient(to right,#2317CB, #2D5ADC); /* ref code couleur des boutons du site */
+   position: relative;
+}
+
+
+.corpOngletVaccins {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 0 0 10px 10px;
+    width: 400px;
+    height: 80px;
+    opacity: 0.8;
+    background: white;
+}
+
+.corpOngletVaccins:hover {
+    transition-duration: 500ms;
+    opacity: 1;
+}
+
+/* fin onglet vaccin */
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ /* début onglet campagne vaccination */
+ 
+ #headerOngletCampagneVaccination {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    width: 400px;
+    height: 35px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC); /* ref code couleur des boutons du site */
+    position: relative;
+ }
+ 
+
+ .corpOngletCampagneVaccination {
+     margin-bottom: 30px;
+     text-align: center;
+     margin-left: 50px;
+     margin-right: 50px;
+     border-radius: 0 0 10px 10px;
+     width: 400px;
+     height: 80px;
+     opacity: 0.9;
+     background: white;
+ }
+
+
+ .corpOngletCampagneVaccination:hover {
+    transition-duration: 500ms;
+    opacity: 1;
+}
+ 
+  /* fin onglet campagne vaccination */
+
+
+
+  #headerOngletSauverVies {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    width: 400px;
+    height: 35px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC); /* ref code couleur des boutons du site */
+    position: relative;
+ }
+
+ .corpOngletSauverVies {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 0 0 10px 10px;
+    width: 400px;
+    height: 80px;
+    opacity: 0.9;
+    background: white;
+}
+
+.corpOngletSauverVies:hover {
+    transition-duration: 500ms;
+    opacity: 1;
+}
+@media screen and (max-width: 1500px) {
+    .onglets {
+        top: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+ /*mobile*/ @media screen and (max-width: 700px) and (orientation: portrait) {
+
+    
+    .slogan {
+        font-size: 60px;
+        text-align: center;
+        justify-content: center;
+    }
+   
+    
+
+}
+/* apparition menu hamburger */
+@media screen and (max-width: 940px) {
+
+       #imageBurger {
+           position: absolute;
+           top: -5px;
+           right:10px;
+           display: block;
+           margin-top: 10px;
+           z-index: 20;
+           margin-left: 20px; 
+           height: 50px;
+           padding-bottom: 400px;
+       }
+
+       .boutonsHeader {
+        display: none; 
+    }
+
+       .traitHeader {
+           display: none;
+       }
+
+       .imageHeader {
+        width: 100px;
+        height: auto;
+    }
+ 
+    h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+ 
+    header {
+        height: 70px;
+    }
+
+    .slogan {
+        top: 150px;
+    }
+/* faire ca au survol du menu hamburger */
+    .containerEtLogo:hover .containerMenuHamburger {
+        display: block;
+    }
+
+    .containerMenuHamburger a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .boutonsHeader {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .onglets {
+        top: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slogan {
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+}
+      
+}
+
+
+/* fin du CSS page d'acceuil */
+
+/* -----------------------------------------------------------------début du CSS page campagne---------------------------------------------------------------- */
+
+/* bannière*/
+.containerBannière {
+    z-index: 3;
+    position: absolute;
+    top: 150px;
+    width: 99vw;
+    height: 250px;
+    background-image: url("../../campagne/Bannière.jpg");
+    background-size: cover;
+}
+
+
+.basSombreBannière {
+    z-index: 5;
+    position: absolute;
+    width: 99vw;
+    top: 170px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.texteTitre {
+    padding-top:10px;
+    color:white;
+    text-align:center;
+}
+
+.titreBannière {
+    position: relative;
+    margin: 0px;
+    left: 41vw;
+    top: 345px;
+    z-index: 6;
+    height: 40px;
+    width: 330px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+    border-radius: 5px;
+}
+
+/* body */
+
+body {
+    background-color: #6DA2FF;
+    font-family: 'Agency FB', arial;
+}
+
+
+.containerQuestionRéponse {
+    position:absolute;
+    top: 400px;
+    width:100%
+}
+
+.containerQuestion {
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+}
+
+.question{
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    top: 12px;
+}
+
+.containerRéponse {
+    height: 200px ;
+    background-color: #82AFFF;
+    
+}
+
+.réponse {
+    position: relative;
+    font-family: 'Agency FB', arial;
+    text-align: center;
+    top: 20px;
+    font-size: 1.2em ;
+}
+
+@media screen and (max-width: 940px) {
+
+.containerBannière {
+    top: 70px;
+    }
+
+.titreBannière {
+   left: 50vw;
+   top: 265px;
+}
+
+#containerRéponse {
+    display: block;
+}
+}
+
+
+
+
+/* fin du CSS campagne */
+
+/* -----------------------------------------début du CSS trouver un centre de vaccination ---------------------------------------------- */
+/* bannière */
+
+.basSombreBannièreCentre {
+    position: absolute;
+    width: 100vw;
+    top: 170px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.texteTitreCentre {
+    padding-top:10px;
+    color:white;
+    text-align:center;
+}
+
+
+.titreBannièreCentre {
+    position: relative;
+    margin: 0px;
+    left: 42%;
+    top: 192px;
+    z-index: 6;
+    height: 40px;
+    width: 300px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+    border-radius: 5px; 
+}
+
+
+.containerBannièreCentre {
+    z-index: 3;
+    position: absolute;
+    top: 150px;
+    width: 100vw;
+    height: 250px;
+    background-image: url("../../trouverCentre/trouver centre.jpg");
+    background-size: cover;
+}
+
+input {
+    top: 195px;
+    z-index: 8;
+    position: relative;
+    left: 45vw;
+    height: 37px;
+    width: 300px;
+    opacity: 1;
+}
+/* body */
+
+iframe {
+    z-index: 10;
+    position: absolute;
+    top: 400px;
+    width:100vw;
+    height: 58.5vh;
+}
+
+/* ---------------------------------------- Fin trouver centre ---------------------------------------*/
+
+/* -------------------------------------- Début tout savoir vaccins --------------------------------*/
+.containerBannièreQuestionsVaccins {
+    z-index: 3;
+    position: absolute;
+    top: 150px;
+    width: 99vw;
+    height: 250px;
+    background-image: url("../../imgVaccin.jpg");
+    background-position-y: 1100px;
+    background-size: cover;
+}
+
+
+.texteTitreVaccin {
+    padding-top:10px;
+    color:white;
+    text-align:center;
+}
+
+.titreBannièreVaccin {
+        position: relative;
+        margin: 0px;
+        left: 44vw;
+        top: 345px;
+        z-index: 6;
+        height: 40px;
+        width: 200px;
+        background: linear-gradient(to right,#2317CB, #2D5ADC);
+        border-radius: 5px;
+}
+/* body */
+
+.containerQuestionRéponseVaccin {
+    position:absolute;
+    top: 400px;
+    width:100%
+}
+
+
+
+.containerQuestionVaccin {
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+}
+
+
+.containerRéponseVaccin {
+    display: none;
+}
+
+.containerRéponseVaccin .is-visible {
+    display: block;
+    height: 200px ;
+    background-color: #82AFFF;
+}
+
+/* -------------------------------fin du question vaccin et début de l'actu --------------------------------------*/
+
+.containerBannièreActu {
+    z-index: 3;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    width: 100vw;
+    height: 250px;
+    background-image: url("../../actu/actu.jpg");
+    background-size: cover;
+}
+
+.texteTitreActu {
+    padding-top:10px;
+    color:white;
+    text-align:center;
+}
+
+.titreBannièreActu {
+    position: relative;
+    margin: 0px;
+    left: 50%;
+    top: 340px;
+    z-index: 6;
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+    border-radius: 5px; 
+}
+ 
+.containerArticle {
+
+    justify-content: center;
+    position:relative;
+    top: 500px;
+    height: 400px;
+    background-image: url("../../actu/veran.jpg");
+    background-size: cover;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.titreActu {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 50px;
+    opacity: 1;
+}
+
+.signature {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 30px;
+    color:white;
+}
+
+.signature1 {
+    color:white;
+    position: absolute;
+    padding-left: 20px;
+    bottom: 10px;
+}
+
+.rideauSombre{
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.containerArticle .rideauSombre:hover{
+   opacity: 0.7;
+   transition-duration: 500ms;
+}
+
+/* fin de l'actu début de sauver vies */
+
+
+
+form {
+
+    background-color: #82AFFF;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 180px;
+    width: 100vw;
+    height: 750px;
+    text-align: end;
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+
+
+label {
+    margin: 20px;
+    width: 60%;
+}
+
+input {
+
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left:0px
+}
+
+#boutonValider {
+
+    vertical-align: middle; 
+    color: white;
+    font-size: 1.4em;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    border: none;
+    background: linear-gradient(to right,#2317CB, #2D5ADC);
+}
+
+
+
+
+
+
